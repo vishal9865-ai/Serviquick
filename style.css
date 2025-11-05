@@ -1,18 +1,10 @@
 * {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
 
 .navbar {
     width: 100%;
@@ -20,12 +12,10 @@
     justify-content: space-between;
     align-items: center;
     padding: 12px 50px;
-    position: relative;
-    background: white;
 }
 
 .logo img {
-    height: 60px;
+    height: 60px;   /* adjust as needed */
 }
 
 .nav-links {
@@ -42,98 +32,27 @@
     transition: 0.3s;
 }
 
-.nav-links li a:hover, .nav-links .active {
+.nav-links li a:hover {
+    color: #ff6f6f;
+}
+
+.nav-links .active {
     color: #ff6f6f;
     font-weight: 500;
 }
 
 .location {
     font-size: 20px;
-    color: #111;
+    color: #222;
 }
 
-.hamburger {
-    display: none;
-    font-size: 28px;
-    cursor: pointer;
+.location i {
+    margin-right: 6px;
+    color: #222;
 }
 
-
-@media (max-width: 900px) {
-    .nav-links {
-        position: absolute;
-        top: 80px;
-        right: 0;
-        background: white;
-        width: 100%;
-        flex-direction: column;
-        gap: 25px;
-        padding: 25px 0;
-        border-top: 2px solid #eee;
-        display: none;
-    }
-
-    .nav-links.active {
-        display: flex;
-        animation: slideDown 0.4s ease forwards;
-    }
-
-    .hamburger {
-        display: block;
-    }
-}
-
-@keyframes slideDown {
-    from {
-        opacity: 0;
-        transform: translateY(-10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.hamburger {
-    display: none;
-    font-size: 28px;
-    cursor: pointer;
-}
-
-
-@media (max-width: 900px) {
-    .nav-links {
-        position: absolute;
-        top: 80px;
-        right: 0;
-        background: white;
-        width: 100%;
-        flex-direction: column;
-        gap: 25px;
-        padding: 25px 0;
-        border-top: 2px solid #eee;
-        display: none;
-    }
-
-    .nav-links.active {
-        display: flex;
-        animation: slideDown 0.4s ease forwards;
-    }
-
-    .hamburger {
-        display: block;
-    }
-}
-
-@keyframes slideDown {
-    from {
-        opacity: 0;
-        transform: translateY(-10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.sectio img{
+    width: 100%;
 }
 
 
@@ -459,5 +378,6 @@
         text-align: center;
     }
 }
+
 
 
