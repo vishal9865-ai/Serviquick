@@ -6,7 +6,10 @@
 }
 
 
+
 .navbar {
+    position: fixed;
+    background-color: white;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -15,14 +18,14 @@
 }
 
 .logo img {
-    height: 60px;   /* adjust as needed */
+    height: 35px;   /* adjust as needed */
 }
 
 .nav-links {
     display: flex;
     list-style: none;
     gap: 35px;
-    font-size: 20px;
+    font-size: 17px;
     align-items: center;
 }
 
@@ -52,9 +55,9 @@
 }
 
 .sectio img{
+    margin-top:60px ;
     width: 100%;
 }
-
 
 .hero-text {
     text-align: center;
@@ -378,6 +381,7 @@
         text-align: center;
     }
 }
+
 
 
 
